@@ -25,7 +25,7 @@ const projects = [
   {
     title: "Velora – Modern E-commerce Frontend",
     description:
-      "A fully responsive e-commerce frontend with dynamic product pages, cart management, persistent state, and modern UI interactions.",
+      "A fully responsive e-commerce frontend with dynamic product pages, cart management, persistent state, routing, and modern UI interactions.",
     image: project2,
     demo: "https://velora-ecommerce-delta.vercel.app/",
     github: "https://github.com/ibeO-GH/Velora-ecommerce",
