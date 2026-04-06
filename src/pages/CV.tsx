@@ -8,9 +8,8 @@ const CV = () => {
           </h1>
           <p className="text-gray-600 mt-2">Frontend Engineer</p>
           <div className="flex flex-wrap justify-center gap-4 mt-4 text-sm text-gray-500">
-            <span>📍 Nigeria</span>
-            <span>📧 ibe.okorafor@gmail.com</span>
-            <span>📞 08138841658</span>
+            <span>• ibe.okorafor@gmail.com</span>
+            <span>• 08138841658</span>
             <a
               href="https://ibe-portfolio-tau.vercel.app/"
               target="_blank"
