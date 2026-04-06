@@ -28,8 +28,8 @@ const About = () => {
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
           <p className="text-lg text-gray-600 mb-4">
-            I'm a Frontend Developer focused on buiilding clean, responsive, and
-            user-friendly web experiences.
+            I’m a frontend engineer focused on building clean, responsive, and
+            user-friendly web applications.
           </p>
           <ul className="space-y-3 text-gray-600">
             <li>• Strong foundation in HTML, CSS, and JavaScript</li>

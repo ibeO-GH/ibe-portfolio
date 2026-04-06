@@ -20,11 +20,12 @@ const Hero = () => {
             Ibe Okorafor
           </h1>
           <h2 className="text-xl md:text-2xl font-semibold mt-3 text-gray-700">
-            A Front-end Web Developer
+            A Frontend Engineer
           </h2>
           <p className="mt-4 text-gray-600 max-w-lg md:max-w-xl leading-relaxed">
-            I am passionate about crafting visually engaging and responsive
-            websites, ensuring seamless user experiences.
+            I build modern, responsive web applications with React, TypeScript,
+            and Tailwind CSS — focused on real-world user experience and
+            performance.
           </p>
           <div className="flex justify-center md:justify-start gap-4 mt-6">
             <a
@@ -49,9 +50,11 @@ const Hero = () => {
               <FaXTwitter />
             </a>
           </div>
-          <button className="mt-6 bg-blue-600 px-7 py-3 rounded-full text-white hover:bg-blue-700 hover:scale-105 transition duration-300">
-            Contact Me
-          </button>
+          <a href="#projects">
+            <button className="mt-6 bg-blue-600 px-7 py-3 rounded-full text-white hover:bg-blue-700 hover:scale-105 transition duration-300">
+              View Projects
+            </button>
+          </a>
         </div>
 
         <div
