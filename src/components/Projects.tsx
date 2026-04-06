@@ -11,7 +11,7 @@ const projects = [
     image: project1,
     demo: "https://velora-ecommerce-delta.vercel.app/",
     github: "https://github.com/ibeO-GH/Velora-ecommerce",
-    tech: ["React", "TypeScript", "Tailwwind", "Context API"],
+    tech: ["React", "TypeScript", "Tailwind", "Context API"],
   },
   {
     title: "TaskFlow - Drag & Drop Task Manager",
@@ -20,7 +20,7 @@ const projects = [
     image: project2,
     demo: "https://taskflow-dnd.vercel.app/",
     github: "https://github.com/ibeO-GH/taskflow-dnd",
-    tech: ["React", "TpeScript", "Tailwind", "dnd-kit"],
+    tech: ["React", "TypeScript", "Tailwind", "dnd-kit"],
   },
   {
     title: "DevFinder - GitHub Explorer",
@@ -44,10 +44,10 @@ const Projects = () => {
           Projects
         </h2>
         <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-          A selection of projects showcasing my ability to build respoonsive,
-          user-focused applications using modern web technoloogies.
+          A selection of projects showcasing my ability to build responsive,
+          user-focused applications using modern web technologies.
         </p>
-        <div className="grid grrid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
