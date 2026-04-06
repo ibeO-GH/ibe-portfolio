@@ -1,7 +1,14 @@
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import CV from "./pages/CV";
 
 function App() {
-  return <Home />;
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/cv" element={<CV />} />
+    </Routes>
+  );
 }
 
 export default App;
