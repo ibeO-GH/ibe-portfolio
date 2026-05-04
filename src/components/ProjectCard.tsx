@@ -45,7 +45,7 @@ const ProjectCard = ({
                 rel="noopener noreferrer"
                 className="text-xs text-white border border-gray-400 px-0.5 py-1.5 rounded hover:bg-gray-700 transition"
               >
-                Github
+                Code
               </a>
             )}
 
