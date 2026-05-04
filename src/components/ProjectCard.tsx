@@ -26,35 +26,63 @@ const ProjectCard = ({
       <div className="relative group">
         <img src={image} alt={title} className="w-full h-48 object-cover" />
 
-        <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center transition duration-300 space-y-2">
+        <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center transition duration-300 px-4">
+          {/* Main CTA */}
           <a
             href={demo}
             target="_blank"
-            className="text-white border px-4 py-2 rounded hover:bg-blue-600 transition"
+            rel="noopener noreferrer"
+            className="text-white border px-4 py-2 rounded hover:bg-blue-600 transition mb-4"
           >
             Live Demo
           </a>
 
-          {github && (
-            <a href={github} target="_blank" className="text-white underline">
-              Github
-            </a>
-          )}
-          {frontend && (
-            <a href={frontend} target="_blank" className="text-white underline">
-              Frontend
-            </a>
-          )}
-          {backend && (
-            <a href={backend} target="_blank" className="text-white underline">
-              Backend
-            </a>
-          )}
-          {api && (
-            <a href={api} target="_blank" className="text-white underline">
-              API
-            </a>
-          )}
+          {/* Grid Links */}
+          <div className="grid grid-cols-2 gap-3 w-full max-w-[200px] text-center">
+            {github && (
+              <a
+                href={github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-white border border-gray-400 py-1.5 rounded hover:bg-gray-700 transition"
+              >
+                Github
+              </a>
+            )}
+
+            {frontend && (
+              <a
+                href={frontend}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-white border border-gray-400 py-1.5 rounded hover:bg-gray-700 transition"
+              >
+                Frontend
+              </a>
+            )}
+
+            {backend && (
+              <a
+                href={backend}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-white border border-gray-400 py-1.5 rounded hover:bg-gray-700 transition"
+              >
+                Backend
+              </a>
+            )}
+
+            {api && (
+              <a
+                href={api}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-white border border-gray-400 py-1.5 rounded hover:bg-gray-700 transition"
+              >
+                API
+              </a>
+            )}
+          </div>
         </div>
       </div>
       <div className="p-4">
