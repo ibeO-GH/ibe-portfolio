@@ -3,7 +3,10 @@ type ProjectProps = {
   description: string;
   image: string;
   demo: string;
-  github: string;
+  github?: string;
+  frontend?: string;
+  backend?: string;
+  api?: string;
   tech: string[];
 };
 
@@ -13,6 +16,9 @@ const ProjectCard = ({
   image,
   demo,
   github,
+  frontend,
+  backend,
+  api,
   tech,
 }: ProjectProps) => {
   return (
@@ -20,7 +26,7 @@ const ProjectCard = ({
       <div className="relative group">
         <img src={image} alt={title} className="w-full h-48 object-cover" />
 
-        <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center transition duration-300">
+        <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center transition duration-300 space-y-2">
           <a
             href={demo}
             target="_blank"
@@ -29,13 +35,26 @@ const ProjectCard = ({
             Live Demo
           </a>
 
-          <a
-            href={github}
-            target="_blank"
-            className="text-white mt-3 underline"
-          >
-            Github
-          </a>
+          {github && (
+            <a href={github} target="_blank" className="text-white underline">
+              Github
+            </a>
+          )}
+          {frontend && (
+            <a href={frontend} target="_blank" className="text-white underline">
+              Frontend
+            </a>
+          )}
+          {backend && (
+            <a href={backend} target="_blank" className="text-white underline">
+              Backend
+            </a>
+          )}
+          {api && (
+            <a href={api} target="_blank" className="text-white underline">
+              API
+            </a>
+          )}
         </div>
       </div>
       <div className="p-4">

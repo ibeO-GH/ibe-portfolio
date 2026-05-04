@@ -8,10 +8,13 @@ const projects = [
   {
     title: "TaskForge — Full-Stack Task Management System",
     description:
-      "A full-stack task management application built with React, TypeScript, Node.js, and MongoDB. Supports CRUD operations, with a backend-driven architecture for persistent data storage. Implements React Query for efficient data fetching, caching, and real-time UI updates, alongside a RESTful API designed for scalability and structured data handling.",
+      "A full-stack task management application built with React, TypeScript, Node.js, and MongoDB. Supports multiple frontend implementations (React, Next.js, Vue). Built with a RESTful API, persistent storage, and advanced UI features.",
     image: project1,
     demo: "https://taskforge-eta.vercel.app/",
     github: "https://github.com/ibeO-GH/taskforge",
+    frontend: "https://github.com/ibeO-GH/taskforge-react",
+    backend: "https://github.com/ibeO-GH/taskforge-backend",
+    api: "https://taskforge-api-z21d.onrender.com",
     tech: [
       "React",
       "TypeScript",
