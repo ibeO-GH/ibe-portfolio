@@ -37,14 +37,13 @@ const ProjectCard = ({
             Live Demo
           </a>
 
-          {/* Grid Links */}
-          <div className="grid grid-cols-2 gap-3 w-full max-w-[200px] text-center">
+          <div className="flex flex-wrap justify-center gap-2 w-full max-w-[220px]">
             {github && (
               <a
                 href={github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-white border border-gray-400 py-1.5 rounded hover:bg-gray-700 transition"
+                className="text-xs text-white border border-gray-400 px-0.5 py-1.5 rounded hover:bg-gray-700 transition"
               >
                 Github
               </a>
@@ -55,7 +54,7 @@ const ProjectCard = ({
                 href={frontend}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-white border border-gray-400 py-1.5 rounded hover:bg-gray-700 transition"
+                className="text-xs text-white border border-gray-400 px-0.5 py-1.5 rounded hover:bg-gray-700 transition"
               >
                 Frontend
               </a>
@@ -66,7 +65,7 @@ const ProjectCard = ({
                 href={backend}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-white border border-gray-400 py-1.5 rounded hover:bg-gray-700 transition"
+                className="text-xs text-white border border-gray-400 px-0.5 py-1.5 rounded hover:bg-gray-700 transition"
               >
                 Backend
               </a>
@@ -77,7 +76,7 @@ const ProjectCard = ({
                 href={api}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-white border border-gray-400 py-1.5 rounded hover:bg-gray-700 transition"
+                className="text-xs text-white border border-gray-400 px-0.5 py-1.5 rounded hover:bg-gray-700 transition"
               >
                 API
               </a>
