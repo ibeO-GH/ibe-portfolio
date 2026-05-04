@@ -1,14 +1,32 @@
 import ProjectCard from "../components/ProjectCard";
-import project1 from "../assets/veloraEcommerce.png";
-import project2 from "../assets/taskflow.png";
-import project3 from "../assets/devfind.png";
+import project1 from "../assets/TaskForge.png";
+import project2 from "../assets/veloraEcommerce.png";
+import project3 from "../assets/taskflow.png";
+import project4 from "../assets/devfind.png";
 
 const projects = [
+  {
+    title: "TaskForge — Full-Stack Task Management System",
+    description:
+      "A full-stack task management application built with React, TypeScript, Node.js, and MongoDB. Supports task creation, editing, deletion, filtering, and pagination, with a backend-driven architecture for persistent data storage. Implements React Query for efficient data fetching, caching, and real-time UI updates, alongside a RESTful API designed for scalability and structured data handling.",
+    image: project1,
+    demo: "https://taskforge-eta.vercel.app/",
+    github: "https://github.com/ibeO-GH/taskforge",
+    tech: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "React Query",
+      "Tailwind",
+    ],
+  },
   {
     title: "Velora – Modern E-commerce Frontend",
     description:
       "Modern e-commerce frontend with dynamic product detail pages with gallery, cart system with quantity control, persistent state (localStorage), and Responsive UI + animations.",
-    image: project1,
+    image: project2,
     demo: "https://velora-ecommerce-delta.vercel.app/",
     github: "https://github.com/ibeO-GH/Velora-ecommerce",
     tech: ["React", "TypeScript", "Tailwind", "Context API"],
@@ -17,7 +35,7 @@ const projects = [
     title: "TaskFlow - Drag & Drop Task Manager",
     description:
       "A modern task management app featuring drag-and-drop functionality, task state transitions, and interactive UI for managing workflows efficiently.",
-    image: project2,
+    image: project3,
     demo: "https://taskflow-dnd.vercel.app/",
     github: "https://github.com/ibeO-GH/taskflow-dnd",
     tech: ["React", "TypeScript", "Tailwind", "dnd-kit"],
@@ -26,7 +44,7 @@ const projects = [
     title: "DevFinder - GitHub Explorer",
     description:
       "A modern GitHub user search application that fetches real-time data, displays developer profiles, repositories, and handles loading, error, and empty states with a polished UI.",
-    image: project3,
+    image: project4,
     demo: "https://dev-finder-app-taupe.vercel.app/",
     github: "https://github.com/ibeO-GH/DevFinder-App",
     tech: ["React", "TypeScript", "Tailwind", "GitHub API"],
