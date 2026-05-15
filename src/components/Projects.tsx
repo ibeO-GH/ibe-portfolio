@@ -1,14 +1,15 @@
 import ProjectCard from "../components/ProjectCard";
+
 import project1 from "../assets/TaskForge.png";
 import project2 from "../assets/veloraEcommerce.png";
-import project3 from "../assets/taskflow.png";
+import project3 from "../assets/financeDashb.png";
 import project4 from "../assets/devfind.png";
 
 const projects = [
   {
-    title: "TaskForge — Full-Stack Task Management System",
+    title: "TaskForge — Full-Stack Task Management Platform",
     description:
-      "A full-stack task management application built with React, TypeScript, Node.js, and MongoDB. Supports multiple frontend implementations (React, Next.js, Vue). Built with a RESTful API, persistent storage, and advanced UI features.",
+      "A scalable full-stack productivity platform featuring persistent task management, REST API integration, reusable frontend architecture, and multi-framework implementations across React, Next.js, and Vue.",
     image: project1,
     demo: "https://taskforge-eta.vercel.app/",
     github: "https://github.com/ibeO-GH/taskforge",
@@ -22,35 +23,36 @@ const projects = [
       "Express",
       "MongoDB",
       "React Query",
-      "Tailwind",
+      "Tailwind CSS",
     ],
+    featured: true,
   },
   {
-    title: "Velora – Modern E-commerce Frontend",
+    title: "Velora — Modern E-Commerce Frontend",
     description:
-      "Modern e-commerce frontend with dynamic product detail pages with gallery, cart system with quantity control, persistent state (localStorage), and Responsive UI + animations.",
+      "A performance-focused e-commerce frontend with dynamic product filtering, persistent cart state, responsive UI architecture, and reusable component systems built for scalable user experiences.",
     image: project2,
     demo: "https://velora-ecommerce-delta.vercel.app/",
     github: "https://github.com/ibeO-GH/Velora-ecommerce",
-    tech: ["React", "TypeScript", "Tailwind", "Context API"],
+    tech: ["React", "TypeScript", "Tailwind CSS", "Context API"],
   },
   {
-    title: "TaskFlow - Drag & Drop Task Manager",
+    title: "Finance Dashboard — Data Visualization Interface",
     description:
-      "A modern task management app featuring drag-and-drop functionality, task state transitions, and interactive UI for managing workflows efficiently.",
+      "An interactive finance dashboard featuring responsive layouts, structured analytics UI, dynamic data visualization, and modern dashboard design patterns.",
     image: project3,
-    demo: "https://taskflow-dnd.vercel.app/",
-    github: "https://github.com/ibeO-GH/taskflow-dnd",
-    tech: ["React", "TypeScript", "Tailwind", "dnd-kit"],
+    demo: "https://finance-dashboard-six-woad.vercel.app/",
+    github: "https://github.com/ibeO-GH/Finance-Dashboard",
+    tech: ["React", "TypeScript", "Recharts", "Tailwind CSS"],
   },
   {
-    title: "DevFinder - GitHub Explorer",
+    title: "DevFinder — GitHub Explorer",
     description:
-      "A modern GitHub user search application that fetches real-time data, displays developer profiles, repositories, and handles loading, error, and empty states with a polished UI.",
+      "A responsive GitHub profile explorer integrating real-time API data, async state management, loading states, error handling, and optimized search functionality.",
     image: project4,
     demo: "https://dev-finder-app-taupe.vercel.app/",
     github: "https://github.com/ibeO-GH/DevFinder-App",
-    tech: ["React", "TypeScript", "Tailwind", "GitHub API"],
+    tech: ["React", "TypeScript", "GitHub API", "Tailwind CSS"],
   },
 ];
 
@@ -58,17 +60,26 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="bg-[#eef2f7] border-t border-gray-200 scroll-mt-24 py-24"
+      className="bg-[#f8fafc] border-t border-gray-200 scroll-mt-24 py-24"
     >
       <div className="w-full px-8 md:px-24 lg:px-32 xl:px-44">
-        <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">
-          Projects
-        </h2>
-        <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-          A selection of projects showcasing my ability to build responsive,
-          user-focused applications using modern web technologies.
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="max-w-4xl mb-16">
+          <p className="text-blue-600 font-medium tracking-wide uppercase text-sm mb-4">
+            Projects
+          </p>
+
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+            Selected Work & Engineering Projects
+          </h2>
+
+          <p className="mt-6 text-lg text-gray-600 leading-relaxed">
+            A collection of frontend and full-stack applications focused on
+            performance, scalability, responsive UI systems, and
+            production-ready user experiences.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
