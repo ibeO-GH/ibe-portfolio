@@ -38,7 +38,7 @@ const About = () => {
         }`}
       >
         <div className="max-w-6xl">
-          <p className="text-blue-600 font-medium tracking-wide uppercase text-sm mb-4">
+          <p className="text-blue-600 font-medium tracking-wide uppercase text-md mb-4">
             About
           </p>
 

@@ -17,7 +17,7 @@ const Contact = () => {
         }`}
       >
         <div className="max-w-5xl">
-          <p className="text-blue-600 font-medium tracking-wide uppercase text-sm mb-4">
+          <p className="text-blue-600 font-medium tracking-wide uppercase text-md mb-4">
             Contact
           </p>
 
