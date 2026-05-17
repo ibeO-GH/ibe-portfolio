@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative bg-[#f8fafc] min-h-screen flex items-center overflow-hidden"
+      className="relative bg-[#f8fafc] dark:bg-[#020617] min-h-screen flex items-center overflow-hidden"
     >
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(37,99,235,0.08),transparent_35%)]" />
@@ -26,7 +26,7 @@ const Hero = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="mt-10 text-5xl sm:text-6xl md:text-7xl font-bold text-gray-900 leading-[1.05] tracking-tight max-w-5xl">
+          <h1 className="mt-10 text-5xl sm:text-6xl md:text-7xl font-bold text-gray-900 dark:text-white leading-[1.05] tracking-tight max-w-5xl">
             Building Modern,
             <br />
             Scalable Web Experiences
@@ -34,7 +34,7 @@ const Hero = () => {
 
           {/* Subtitle */}
           <div className="mt-8">
-            <p className="text-2xl md:text-3xl font-semibold text-gray-900">
+            <p className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white">
               Frontend Engineer
             </p>
 

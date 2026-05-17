@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="bg-[#f8fafc] border-t border-gray-200 py-24 scroll-mt-24"
+      className="bg-[#f8fafc] dark:bg-[#020617] border-t border-gray-200 py-24 scroll-mt-24"
     >
       <div
         ref={ref}

@@ -55,7 +55,7 @@ const Skills = () => {
     <section
       id="skills"
       ref={ref}
-      className={`bg-[#eef2f7] border-t border-gray-200 py-24 scroll-mt-24 transition-all duration-700 ${
+      className={`bg-[#eef2f7] dark:bg-[#020617] border-t border-gray-200 py-24 scroll-mt-24 transition-all duration-700 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >

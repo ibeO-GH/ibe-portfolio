@@ -80,8 +80,8 @@ type CVProps = {
 
 const CV = ({}: CVProps) => {
   return (
-    <section className="bg-[#f5f7fb] min-h-screen py-16 px-6 md:px-12">
-      <div className="max-w-5xl mx-auto bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden">
+    <section className="bg-[#f5f7fb] dark:bg-[#020617] min-h-screen py-16 px-6 md:px-12">
+      <div className="max-w-5xl mx-auto bg-white dark:bg-[#020617]  rounded-3xl shadow-xl border border-gray-200 overflow-hidden">
         {/* Header */}
         <div className="px-8 md:px-14 py-14 border-b border-gray-200">
           <p className="text-blue-600 uppercase tracking-[0.2em] text-sm font-medium mb-5">

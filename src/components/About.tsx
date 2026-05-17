@@ -29,7 +29,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bg-[#eef2f7] border-t border-gray-200 py-24 scroll-mt-24"
+      className="bg-[#eef2f7] dark:bg-[#020617] border-t border-gray-200 py-24 scroll-mt-24"
     >
       <div
         ref={ref}

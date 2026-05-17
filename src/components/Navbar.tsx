@@ -32,7 +32,7 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
       <nav
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-white/80 backdrop-blur-md border-b border-gray-200"
+            ? "bg-white/80 backdrop-blur-md dark:bg-[#020617] border-b border-gray-200"
             : "bg-transparent"
         }`}
       >
@@ -41,7 +41,7 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
             {/* Logo */}
             <a
               href="#home"
-              className="text-2xl font-bold tracking-tight text-gray-900"
+              className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
             >
               Ibe<span className="text-blue-600">.</span>O
             </a>
@@ -87,7 +87,7 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="md:hidden text-3xl text-gray-900"
+              className="md:hidden text-3xl text-gray-900 dark:text-white"
             >
               {menuOpen ? "✕" : "☰"}
             </button>

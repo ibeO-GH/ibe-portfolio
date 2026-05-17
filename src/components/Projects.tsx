@@ -60,7 +60,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="bg-[#f8fafc] border-t border-gray-200 scroll-mt-24 py-24"
+      className="bg-[#f8fafc] dark:bg-[#020617] border-t border-gray-200 scroll-mt-24 py-24"
     >
       <div className="w-full px-8 md:px-24 lg:px-32 xl:px-44">
         <div className="max-w-4xl mb-16">
