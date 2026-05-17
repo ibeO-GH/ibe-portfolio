@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Moon, Sun } from "lucide-react";
 
 const navLinks = [
   { name: "About", href: "#about" },
@@ -7,7 +8,12 @@ const navLinks = [
   { name: "Contact", href: "#contact" },
 ];
 
-const Navbar = () => {
+type NavbarProps = {
+  darkMode: boolean;
+  setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -37,7 +43,7 @@ const Navbar = () => {
               href="#home"
               className="text-2xl font-bold tracking-tight text-gray-900"
             >
-              Ibe<span className="text-blue-600">.O</span>
+              Ibe<span className="text-blue-600">.</span>O
             </a>
 
             {/* Desktop Navigation */}
@@ -53,6 +59,13 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+
+            <button
+              onClick={() => setDarkMode(!darkMode)}
+              className="w-11 h-11 rounded-full border border-gray-300 dark:border-gray-700 flex items-center justify-center hover:border-blue-600 transition duration-300"
+            >
+              {darkMode ? <Sun size={18} /> : <Moon size={18} />}
+            </button>
 
             {/* Desktop CTA */}
             <div className="hidden md:flex items-center gap-4">

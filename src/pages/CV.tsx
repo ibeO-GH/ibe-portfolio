@@ -74,7 +74,11 @@ const projects = [
   },
 ];
 
-const CV = () => {
+type CVProps = {
+  darkMode: boolean;
+};
+
+const CV = ({}: CVProps) => {
   return (
     <section className="bg-[#f5f7fb] min-h-screen py-16 px-6 md:px-12">
       <div className="max-w-5xl mx-auto bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden">
