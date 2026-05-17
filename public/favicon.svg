@@ -1,22 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <defs>
-    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#2563eb"/>
-      <stop offset="100%" stop-color="#0ea5e9"/>
-    </linearGradient>
-  </defs>
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="128" height="128" rx="28" fill="#0F172A"/>
+  
+  <path d="M38 36H52V92H38V36Z" fill="white"/>
 
-  <rect width="64" height="64" rx="14" fill="url(#grad)"/>
+  <circle cx="84" cy="64" r="24" stroke="#2563EB" stroke-width="12"/>
 
-  <text
-    x="50%"
-    y="55%"
-    text-anchor="middle"
-    fill="white"
-    font-size="26"
-    font-family="Arial, sans-serif"
-    font-weight="bold"
-  >
-    IO
-  </text>
+  <circle cx="84" cy="64" r="6" fill="#2563EB"/>
 </svg>
