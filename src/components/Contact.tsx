@@ -17,7 +17,7 @@ const Contact = () => {
         }`}
       >
         <div className="max-w-5xl">
-          <p className="text-blue-600 font-medium tracking-wide uppercase text-md mb-4">
+          <p className="text-blue-600 font-semibold tracking-[0.22em] uppercase text-[15px] mb-5">
             Contact
           </p>
 
@@ -33,7 +33,7 @@ const Contact = () => {
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 mt-16">
-            <div className="bg-white dark:bg-[#020617] border border-gray-200 dark:border-gray-800 rounded-2xl p-8">
+            <div className="bg-white dark:bg-[#0f172a] border border-gray-200 dark:border-gray-800 rounded-2xl p-8">
               <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
                 Contact Information
               </h3>
@@ -81,7 +81,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <form className="bg-white dark:bg-[#020617] border border-gray-200 dark:border-gray-800 rounded-2xl p-8 space-y-5">
+            <form className="bg-white dark:bg-[#0f172a] border border-gray-200 dark:border-gray-800 rounded-2xl p-8 space-y-5">
               <div>
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                   Full Name
@@ -90,7 +90,7 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="Enter your name"
-                  className="w-full border border-gray-300 dark:border-gray-800 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-600 transition duration-300"
+                  className="w-full bg-white dark:bg-[#020617] border border-gray-300 dark:border-white/10 rounded-xl px-4 py-3 text-gray-900 dark:text-white placeholder:text-gray-400 focus:outline-none focus:border-blue-600 transition duration-300"
                 />
               </div>
 
@@ -102,7 +102,7 @@ const Contact = () => {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="w-full border border-gray-300 dark:border-gray-800 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-600 transition duration-300"
+                  className="w-full bg-white dark:bg-[#020617] border border-gray-300 dark:border-white/10 rounded-xl px-4 py-3 text-gray-900 dark:text-white placeholder:text-gray-400 focus:outline-none focus:border-blue-600 transition duration-300"
                 />
               </div>
 
@@ -114,7 +114,7 @@ const Contact = () => {
                 <textarea
                   rows={6}
                   placeholder="Tell me about your project or opportunity"
-                  className="w-full border border-gray-300 dark:border-gray-800 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-600 transition duration-300 resize-none"
+                  className="w-full bg-white dark:bg-[#020617] border border-gray-300 dark:border-white/10 rounded-xl px-4 py-3 text-gray-900 dark:text-white placeholder:text-gray-400 focus:outline-none focus:border-blue-600 transition duration-300 resize-none"
                 ></textarea>
               </div>
 

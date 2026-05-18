@@ -61,7 +61,7 @@ const Skills = () => {
     >
       <div className="w-full px-8 md:px-24 lg:px-32 xl:px-44">
         <div className="max-w-4xl mb-16">
-          <p className="text-blue-600 font-medium tracking-wide uppercase text-md mb-4">
+          <p className="text-blue-600 font-semibold tracking-[0.22em] uppercase text-[15px] mb-5">
             Skills
           </p>
 
@@ -80,9 +80,9 @@ const Skills = () => {
           {skillCategories.map((category) => (
             <div
               key={category.title}
-              className="bg-white border border-gray-200 dark:border-gray-800 rounded-2xl p-8 hover:shadow-lg transition duration-300"
+              className="group bg-white dark:bg-[#0f172a] border border-gray-200 dark:border-white/10 rounded-3xl p-8 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-2xl transition-all duration-300"
             >
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+              <h3 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white mb-6">
                 {category.title}
               </h3>
 
@@ -90,7 +90,7 @@ const Skills = () => {
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="px-4 py-2 bg-gray-100 rounded-full text-sm text-gray-700"
+                    className="px-4 py-2 bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-full text-sm text-gray-700 dark:text-gray-300 transition duration-300"
                   >
                     {skill}
                   </span>

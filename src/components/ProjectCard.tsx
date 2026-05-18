@@ -25,7 +25,7 @@ const ProjectCard = ({
 }: ProjectProps) => {
   return (
     <div
-      className={`group bg-white border border-gray-200 rounded-3xl overflow-hidden transition duration-300 hover:-translate-y-1 hover:shadow-2xl ${
+      className={`group bg-white dark:bg-[#0f172a] border border-gray-200 dark:border-white/10 rounded-[28px overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:border-blue-500/30 hover:shadow-2xl ${
         featured ? "lg:col-span-2" : ""
       }`}
     >
@@ -38,7 +38,7 @@ const ProjectCard = ({
           }`}
         />
 
-        <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+        <div className="absolute inset-0 bg-black/50 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
           <a
             href={demo}
             target="_blank"
@@ -55,18 +55,20 @@ const ProjectCard = ({
           {tech.map((item, index) => (
             <span
               key={index}
-              className="text-xs px-3 py-1 rounded-full bg-gray-100 text-gray-600"
+              className="text-xs px-3 py-1.5 rounded-full bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-gray-600 dark:text-gray-300"
             >
               {item}
             </span>
           ))}
         </div>
 
-        <h3 className="text-2xl font-bold text-gray-900 leading-snug">
+        <h3 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white leading-snug">
           {title}
         </h3>
 
-        <p className="text-gray-600 mt-4 leading-relaxed">{description}</p>
+        <p className="text-gray-600 dark:text-gray-300 mt-4 leading-relaxed">
+          {description}
+        </p>
 
         <div className="flex flex-wrap gap-3 mt-8">
           <a
@@ -83,7 +85,7 @@ const ProjectCard = ({
               href={github}
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-gray-300 px-5 py-2 rounded-full text-sm font-medium hover:border-blue-600 hover:text-blue-600 transition duration-300"
+              className="border border-gray-300 dark:border-white/10 px-5 py-2 rounded-full text-sm font-medium hover:border-blue-600 hover:text-blue-600 transition duration-300"
             >
               GitHub
             </a>
@@ -94,7 +96,7 @@ const ProjectCard = ({
               href={frontend}
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-gray-300 px-5 py-2 rounded-full text-sm font-medium hover:border-blue-600 hover:text-blue-600 transition duration-300"
+              className="border border-gray-300 dark:border-white/10 px-5 py-2 rounded-full text-sm font-medium hover:border-blue-600 hover:text-blue-600 transition duration-300"
             >
               Frontend
             </a>
@@ -105,7 +107,7 @@ const ProjectCard = ({
               href={backend}
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-gray-300 px-5 py-2 rounded-full text-sm font-medium hover:border-blue-600 hover:text-blue-600 transition duration-300"
+              className="border border-gray-300 dark:border-white/10 px-5 py-2 rounded-full text-sm font-medium hover:border-blue-600 hover:text-blue-600 transition duration-300"
             >
               Backend
             </a>
@@ -116,7 +118,7 @@ const ProjectCard = ({
               href={api}
               target="_blank"
               rel="noopener noreferrer"
-              className="border border-gray-300 px-5 py-2 rounded-full text-sm font-medium hover:border-blue-600 hover:text-blue-600 transition duration-300"
+              className="border border-gray-300 dark:border-white/10 px-5 py-2 rounded-full text-sm font-medium hover:border-blue-600 hover:text-blue-600 transition duration-300"
             >
               API
             </a>

@@ -38,7 +38,7 @@ const About = () => {
         }`}
       >
         <div className="max-w-6xl">
-          <p className="text-blue-600 font-medium tracking-wide uppercase text-md mb-4">
+          <p className="text-blue-600 font-semibold tracking-[0.22em] uppercase text-[15px] mb-5">
             About
           </p>
 
@@ -46,7 +46,7 @@ const About = () => {
             Frontend Engineer Focused on Building Modern Web Applications
           </h2>
 
-          <p className="mt-8 text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-4xl">
+          <p className="mt-8 text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl">
             I specialize in building responsive, accessible, and
             performance-focused web applications using React, TypeScript, and
             modern frontend technologies. My approach combines clean UI
@@ -54,7 +54,7 @@ const About = () => {
             thinking to create polished user experiences.
           </p>
 
-          <p className="mt-6 text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-4xl">
+          <p className="mt-6 text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl">
             I enjoy transforming complex ideas into intuitive interfaces while
             maintaining performance, scalability, and maintainable code
             structure across projects.
@@ -64,7 +64,7 @@ const About = () => {
             {strengths.map((item) => (
               <div
                 key={item.title}
-                className="bg-white border border-gray-200 dark:border-gray-800 rounded-2xl p-6 hover:shadow-lg transition duration-300"
+                className="bg-white dark:bg-[#0f172a] border border-gray-200 dark:border-white/10 rounded-3xl p-7 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-2xl transition-all duration-300"
               >
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
                   {item.title}

@@ -81,29 +81,29 @@ type CVProps = {
 const CV = ({}: CVProps) => {
   return (
     <section className="bg-[#f5f7fb] dark:bg-[#020617] min-h-screen py-16 px-6 md:px-12">
-      <div className="max-w-5xl mx-auto bg-white dark:bg-[#020617]  rounded-3xl shadow-xl border border-gray-200 overflow-hidden">
+      <div className="max-w-5xl mx-auto bg-white dark:bg-[#0f172a]  rounded-3xl shadow-xl border border-gray-200 dark:border-gray-800 overflow-hidden">
         {/* Header */}
-        <div className="px-8 md:px-14 py-14 border-b border-gray-200">
+        <div className="px-8 md:px-14 py-14 border-b border-gray-200 dark:border-gray-800">
           <p className="text-blue-600 uppercase tracking-[0.2em] text-sm font-medium mb-5">
             Resume
           </p>
 
-          <h1 className="text-5xl font-bold text-gray-900 leading-tight">
+          <h1 className="text-5xl font-bold text-gray-900 dark:text-white leading-tight">
             Okorafor Ibe
           </h1>
 
-          <p className="mt-4 text-2xl text-gray-600 font-medium">
+          <p className="mt-4 text-2xl text-gray-600 dark:text-gray-300 font-medium">
             Frontend Engineer
           </p>
 
-          <p className="mt-6 max-w-3xl text-lg text-gray-600 leading-relaxed">
+          <p className="mt-6 max-w-3xl text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
             Frontend Engineer specialising in React and TypeScript with
             experience building scalable, responsive, and performance-focused
             web applications across e-commerce, productivity, and analytics
             platforms.
           </p>
 
-          <div className="flex flex-wrap gap-4 mt-8 text-sm text-gray-600">
+          <div className="flex flex-wrap gap-4 mt-8 text-sm text-gray-600 dark:text-gray-300">
             <span>ibe.okorafor@gmail.com</span>
             <span>•</span>
             <span>Lagos, Nigeria</span>
@@ -145,11 +145,11 @@ const CV = ({}: CVProps) => {
         <div className="px-8 md:px-14 py-14 space-y-16">
           {/* Professional Summary */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
               Professional Summary
             </h2>
 
-            <p className="text-gray-600 leading-relaxed text-lg">
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
               Results-driven frontend engineer focused on building
               production-grade web applications with strong emphasis on
               scalability, performance optimisation, responsive UI systems, and
@@ -161,7 +161,7 @@ const CV = ({}: CVProps) => {
 
           {/* Core Competencies */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
               Core Competencies
             </h2>
 
@@ -169,7 +169,7 @@ const CV = ({}: CVProps) => {
               {competencies.map((item) => (
                 <span
                   key={item}
-                  className="px-4 py-2 rounded-full bg-gray-100 text-gray-700 text-sm"
+                  className="px-4 py-2 rounded-full bg-gray-100 dark:bg-white/5 text-gray-700 text-sm  dark:text-gray-300"
                 >
                   {item}
                 </span>
@@ -179,7 +179,7 @@ const CV = ({}: CVProps) => {
 
           {/* Technical Skills */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
               Technical Skills
             </h2>
 
@@ -187,13 +187,15 @@ const CV = ({}: CVProps) => {
               {technicalSkills.map((skill) => (
                 <div
                   key={skill.category}
-                  className="grid md:grid-cols-[220px_1fr] gap-4 border-b border-gray-100 pb-5"
+                  className="grid md:grid-cols-[220px_1fr] gap-4 border-b border-gray-100 dark:border-gray-800 pb-5"
                 >
-                  <h3 className="font-semibold text-gray-900">
+                  <h3 className="font-semibold text-gray-900 dark:text-white">
                     {skill.category}
                   </h3>
 
-                  <p className="text-gray-600 leading-relaxed">{skill.items}</p>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    {skill.items}
+                  </p>
                 </div>
               ))}
             </div>
@@ -201,26 +203,28 @@ const CV = ({}: CVProps) => {
 
           {/* Experience */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
               Professional Experience
             </h2>
 
-            <div className="border border-gray-200 rounded-2xl p-8">
+            <div className="border border-gray-200 dark:border-gray-800 rounded-2xl p-8">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                     Frontend Engineer — GSF Digital
                   </h3>
 
-                  <p className="text-gray-500 mt-1">
+                  <p className="text-gray-500 dark:text-gray-300 mt-1">
                     Production-grade frontend development
                   </p>
                 </div>
 
-                <p className="text-sm text-gray-500">January 2025 — Present</p>
+                <p className="text-sm text-gray-500 dark:text-gray-300">
+                  January 2025 — Present
+                </p>
               </div>
 
-              <ul className="mt-8 space-y-4 text-gray-600 leading-relaxed">
+              <ul className="mt-8 space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
                 <li>
                   • Engineered and deployed multiple production-ready web
                   applications using React, TypeScript, and Tailwind CSS.
@@ -251,7 +255,7 @@ const CV = ({}: CVProps) => {
 
           {/* Projects */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
               Selected Projects
             </h2>
 
@@ -259,13 +263,13 @@ const CV = ({}: CVProps) => {
               {projects.map((project) => (
                 <div
                   key={project.title}
-                  className="border border-gray-200 rounded-2xl p-8"
+                  className="border border-gray-200 dark:border-gray-800 rounded-2xl p-8"
                 >
-                  <h3 className="text-xl font-semibold text-gray-900">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                     {project.title}
                   </h3>
 
-                  <ul className="mt-5 space-y-3 text-gray-600 leading-relaxed">
+                  <ul className="mt-5 space-y-3 text-gray-600 dark:text-gray-300 leading-relaxed">
                     {project.points.map((point) => (
                       <li key={point}>• {point}</li>
                     ))}
@@ -277,38 +281,38 @@ const CV = ({}: CVProps) => {
 
           {/* Education */}
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
               Education & Certifications
             </h2>
 
             <div className="space-y-8">
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                   Bachelor of Technology (B.Tech) — Computer Science
                 </h3>
 
-                <p className="text-gray-600 mt-2">
+                <p className="text-gray-600 dark:text-gray-300 mt-2">
                   Federal University of Technology, Owerri (FUTO) — 2018–2022
                 </p>
               </div>
 
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                   Diploma in Frontend Engineering
                 </h3>
 
-                <p className="text-gray-600 mt-2">
+                <p className="text-gray-600 dark:text-gray-300 mt-2">
                   Vephla Institute — Advanced React, TypeScript, Responsive
                   Design & Accessibility
                 </p>
               </div>
 
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                   Diploma in Frontend Engineering (Full-Stack JS)
                 </h3>
 
-                <p className="text-gray-600 mt-2">
+                <p className="text-gray-600 dark:text-gray-300 mt-2">
                   AltSchool Africa — MERN Stack, Agile Development &
                   Collaboration
                 </p>
