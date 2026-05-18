@@ -32,7 +32,7 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
       <nav
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-white/80 backdrop-blur-md dark:bg-[#020617] border-b border-gray-200"
+            ? "bg-white/80 backdrop-blur-md dark:bg-[#020617] border-b border-gray-200 dark:border-gray-800"
             : "bg-transparent"
         }`}
       >
@@ -52,7 +52,7 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-gray-600 hover:text-blue-600 transition duration-300 font-medium"
+                    className="text-gray-600 dark:text-gray-300 hover:text-blue-600 transition duration-300 font-medium"
                   >
                     {link.name}
                   </a>
@@ -97,7 +97,7 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-20 left-0 w-full bg-white border-t border-gray-200 z-40 transition-all duration-300 md:hidden ${
+        className={`fixed top-20 left-0 w-full bg-white dark:bg-[#020617] border-t border-gray-200 dark:border-gray-800 z-40 transition-all duration-300 md:hidden ${
           menuOpen
             ? "opacity-100 translate-y-0"
             : "opacity-0 -translate-y-5 pointer-events-none"
@@ -109,7 +109,7 @@ const Navbar = ({ darkMode, setDarkMode }: NavbarProps) => {
               key={link.name}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="text-gray-700 text-lg font-medium hover:text-blue-600 transition duration-300"
+              className="text-gray-700 dark:text-gray-300 text-lg font-medium hover:text-blue-600 transition duration-300"
             >
               {link.name}
             </a>

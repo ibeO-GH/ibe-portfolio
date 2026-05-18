@@ -55,7 +55,7 @@ const Skills = () => {
     <section
       id="skills"
       ref={ref}
-      className={`bg-[#eef2f7] dark:bg-[#020617] border-t border-gray-200 py-24 scroll-mt-24 transition-all duration-700 ${
+      className={`bg-[#eef2f7] dark:bg-[#020617] border-t border-gray-200 dark:border-gray-800 py-24 scroll-mt-24 transition-all duration-700 ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
@@ -65,11 +65,11 @@ const Skills = () => {
             Skills
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
             Technologies & Engineering Workflow
           </h2>
 
-          <p className="mt-6 text-lg text-gray-600 leading-relaxed">
+          <p className="mt-6 text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
             A focused frontend engineering stack centered around scalable React
             applications, responsive UI systems, API integration, and
             performance-oriented development.
@@ -80,7 +80,7 @@ const Skills = () => {
           {skillCategories.map((category) => (
             <div
               key={category.title}
-              className="bg-white border border-gray-200 rounded-2xl p-8 hover:shadow-lg transition duration-300"
+              className="bg-white border border-gray-200 dark:border-gray-800 rounded-2xl p-8 hover:shadow-lg transition duration-300"
             >
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">
                 {category.title}

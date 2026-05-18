@@ -60,7 +60,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="bg-[#f8fafc] dark:bg-[#020617] border-t border-gray-200 scroll-mt-24 py-24"
+      className="bg-[#f8fafc] dark:bg-[#020617] border-t border-gray-200 dark:border-gray-800  scroll-mt-24 py-24"
     >
       <div className="w-full px-8 md:px-24 lg:px-32 xl:px-44">
         <div className="max-w-4xl mb-16">
@@ -68,11 +68,11 @@ const Projects = () => {
             Projects
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
             Selected Work & Engineering Projects
           </h2>
 
-          <p className="mt-6 text-lg text-gray-600 leading-relaxed">
+          <p className="mt-6 text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
             A collection of frontend and full-stack applications focused on
             performance, scalability, responsive UI systems, and
             production-ready user experiences.

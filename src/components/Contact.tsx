@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="bg-[#f8fafc] dark:bg-[#020617] border-t border-gray-200 py-24 scroll-mt-24"
+      className="bg-[#f8fafc] dark:bg-[#020617] border-t border-gray-200 dark:border-gray-800 py-24 scroll-mt-24"
     >
       <div
         ref={ref}
@@ -21,11 +21,11 @@ const Contact = () => {
             Contact
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
             Let’s Build Something Meaningful
           </h2>
 
-          <p className="mt-6 text-lg text-gray-600 leading-relaxed max-w-3xl">
+          <p className="mt-6 text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl">
             I’m currently open to frontend engineering opportunities,
             collaborations, and product-focused projects. Whether you’re
             building a startup, scaling a platform, or looking for a frontend
@@ -33,17 +33,17 @@ const Contact = () => {
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 mt-16">
-            <div className="bg-white border border-gray-200 rounded-2xl p-8">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+            <div className="bg-white dark:bg-[#020617] border border-gray-200 dark:border-gray-800 rounded-2xl p-8">
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
                 Contact Information
               </h3>
 
               <div className="space-y-5">
                 <a
                   href="mailto:ibe.okorafor@gmail.com"
-                  className="flex items-center gap-4 text-gray-600 hover:text-blue-600 transition duration-300"
+                  className="flex items-center gap-4 text-gray-600 dark:text-gray-300 hover:text-blue-600 transition duration-300"
                 >
-                  <div className="w-11 h-11 rounded-full border border-gray-300 flex items-center justify-center">
+                  <div className="w-11 h-11 rounded-full border border-gray-300 dark:border-gray-800 flex items-center justify-center">
                     <FiMail />
                   </div>
 
@@ -55,7 +55,7 @@ const Contact = () => {
                     href="https://github.com/ibeO-GH"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-11 h-11 border border-gray-300 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white hover:border-blue-600 transition duration-300"
+                    className="w-11 h-11 border border-gray-300 dark:border-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white hover:border-blue-600 transition duration-300"
                   >
                     <FaGithub />
                   </a>
@@ -64,7 +64,7 @@ const Contact = () => {
                     href="https://www.linkedin.com/in/okorafor-ibe-1b79192b7/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-11 h-11 border border-gray-300 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white hover:border-blue-600 transition duration-300"
+                    className="w-11 h-11 border border-gray-300 dark:border-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white hover:border-blue-600 transition duration-300"
                   >
                     <FaLinkedinIn />
                   </a>
@@ -73,7 +73,7 @@ const Contact = () => {
                     href="https://x.com/ibeO_X"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-11 h-11 border border-gray-300 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white hover:border-blue-600 transition duration-300"
+                    className="w-11 h-11 border border-gray-300 dark:border-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white hover:border-blue-600 transition duration-300"
                   >
                     <FaXTwitter />
                   </a>
@@ -81,40 +81,40 @@ const Contact = () => {
               </div>
             </div>
 
-            <form className="bg-white border border-gray-200 rounded-2xl p-8 space-y-5">
+            <form className="bg-white dark:bg-[#020617] border border-gray-200 dark:border-gray-800 rounded-2xl p-8 space-y-5">
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                   Full Name
                 </label>
 
                 <input
                   type="text"
                   placeholder="Enter your name"
-                  className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-600 transition duration-300"
+                  className="w-full border border-gray-300 dark:border-gray-800 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-600 transition duration-300"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                   Email Address
                 </label>
 
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-600 transition duration-300"
+                  className="w-full border border-gray-300 dark:border-gray-800 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-600 transition duration-300"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                   Message
                 </label>
 
                 <textarea
                   rows={6}
                   placeholder="Tell me about your project or opportunity"
-                  className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-600 transition duration-300 resize-none"
+                  className="w-full border border-gray-300 dark:border-gray-800 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-600 transition duration-300 resize-none"
                 ></textarea>
               </div>
 
@@ -127,7 +127,7 @@ const Contact = () => {
             </form>
           </div>
 
-          <div className="pt-16 text-sm text-gray-500">
+          <div className="pt-16 text-sm text-gray-500 dark:text-gray-300">
             © {new Date().getFullYear()} Okorafor Ibe. All rights reserved.
           </div>
         </div>

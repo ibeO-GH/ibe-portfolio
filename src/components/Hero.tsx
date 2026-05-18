@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative bg-[#f8fafc] dark:bg-[#020617] min-h-screen flex items-center overflow-hidden"
+      className="relative bg-[#f8fafc] dark:bg-[#020617]  min-h-screen flex items-center overflow-hidden"
     >
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(37,99,235,0.08),transparent_35%)]" />
@@ -38,7 +38,7 @@ const Hero = () => {
               Frontend Engineer
             </p>
 
-            <p className="mt-5 text-xl md:text-2xl text-gray-600 leading-relaxed max-w-3xl">
+            <p className="mt-5 text-xl md:text-2xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl">
               Specialising in React, TypeScript, and performance-focused web
               applications with strong emphasis on scalable architecture,
               responsive systems, and polished product experiences.
@@ -67,7 +67,7 @@ const Hero = () => {
               href="https://github.com/ibeO-GH"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center text-gray-700 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition duration-300"
+              className="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center text-gray-700 dark:text-gray-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition duration-300"
             >
               <FaGithub />
             </a>
@@ -76,7 +76,7 @@ const Hero = () => {
               href="https://www.linkedin.com/in/okorafor-ibe-1b79192b7/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center text-gray-700 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition duration-300"
+              className="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center text-gray-700 dark:text-gray-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition duration-300"
             >
               <FaLinkedinIn />
             </a>
@@ -85,21 +85,25 @@ const Hero = () => {
               href="https://x.com/ibeO_X"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center text-gray-700 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition duration-300"
+              className="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center text-gray-700 dark:text-gray-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition duration-300"
             >
               <FaXTwitter />
             </a>
           </div>
 
           {/* Bottom Meta */}
-          <div className="mt-16 flex flex-wrap gap-8 text-sm text-gray-500">
+          <div className="mt-16 flex flex-wrap gap-8 text-sm text-gray-500 dark:text-gray-300">
             <div>
-              <span className="font-semibold text-gray-900">Frontend:</span>{" "}
+              <span className="font-semibold text-gray-900 dark:text-white">
+                Frontend:
+              </span>{" "}
               React · TypeScript · Tailwind
             </div>
 
             <div>
-              <span className="font-semibold text-gray-900">Backend:</span>{" "}
+              <span className="font-semibold text-gray-900 dark:text-white">
+                Backend:
+              </span>{" "}
               Node.js · Express · MongoDB
             </div>
           </div>

@@ -29,7 +29,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bg-[#eef2f7] dark:bg-[#020617] border-t border-gray-200 py-24 scroll-mt-24"
+      className="bg-[#eef2f7] dark:bg-[#020617] border-t border-gray-200 dark:border-gray-800 py-24 scroll-mt-24"
     >
       <div
         ref={ref}
@@ -42,11 +42,11 @@ const About = () => {
             About
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight max-w-3xl">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight max-w-3xl">
             Frontend Engineer Focused on Building Modern Web Applications
           </h2>
 
-          <p className="mt-8 text-lg text-gray-600 leading-relaxed max-w-4xl">
+          <p className="mt-8 text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-4xl">
             I specialize in building responsive, accessible, and
             performance-focused web applications using React, TypeScript, and
             modern frontend technologies. My approach combines clean UI
@@ -54,7 +54,7 @@ const About = () => {
             thinking to create polished user experiences.
           </p>
 
-          <p className="mt-6 text-lg text-gray-600 leading-relaxed max-w-4xl">
+          <p className="mt-6 text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-4xl">
             I enjoy transforming complex ideas into intuitive interfaces while
             maintaining performance, scalability, and maintainable code
             structure across projects.
@@ -64,13 +64,13 @@ const About = () => {
             {strengths.map((item) => (
               <div
                 key={item.title}
-                className="bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-lg transition duration-300"
+                className="bg-white border border-gray-200 dark:border-gray-800 rounded-2xl p-6 hover:shadow-lg transition duration-300"
               >
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
                   {item.title}
                 </h3>
 
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                   {item.description}
                 </p>
               </div>
