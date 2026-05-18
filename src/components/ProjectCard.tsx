@@ -1,6 +1,10 @@
 type ProjectProps = {
   title: string;
   description: string;
+  challenge?: string;
+  architecture?: string;
+  performance?: string;
+  engineering?: string[];
   image: string;
   demo: string;
   github?: string;
@@ -14,6 +18,10 @@ type ProjectProps = {
 const ProjectCard = ({
   title,
   description,
+  challenge,
+  architecture,
+  performance,
+  engineering,
   image,
   demo,
   github,
@@ -25,7 +33,7 @@ const ProjectCard = ({
 }: ProjectProps) => {
   return (
     <div
-      className={`group bg-white dark:bg-[#0f172a] border border-gray-200 dark:border-white/10 rounded-[28px overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:border-blue-500/30 hover:shadow-2xl ${
+      className={`group bg-white dark:bg-[#0f172a] border border-gray-200 dark:border-white/10 rounded-[28px] overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:border-blue-500/30 hover:shadow-2xl ${
         featured ? "lg:col-span-2" : ""
       }`}
     >
@@ -69,6 +77,64 @@ const ProjectCard = ({
         <p className="text-gray-600 dark:text-gray-300 mt-4 leading-relaxed">
           {description}
         </p>
+        {featured && (
+          <div className="mt-8 space-y-6">
+            {challenge && (
+              <div>
+                <h4 className="text-sm font-semibold uppercase tracking-[0.18em] text-blue-600 mb-2">
+                  Engineering Challenge
+                </h4>
+
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  {challenge}
+                </p>
+              </div>
+            )}
+
+            {architecture && (
+              <div>
+                <h4 className="text-sm font-semibold uppercase tracking-[0.18em] text-blue-600 mb-2">
+                  Architecture
+                </h4>
+
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  {architecture}
+                </p>
+              </div>
+            )}
+
+            {performance && (
+              <div>
+                <h4 className="text-sm font-semibold uppercase tracking-[0.18em] text-blue-600 mb-2">
+                  Performance & Optimization
+                </h4>
+
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  {performance}
+                </p>
+              </div>
+            )}
+
+            {engineering && (
+              <div>
+                <h4 className="text-sm font-semibold uppercase tracking-[0.18em] text-blue-600 mb-4">
+                  Engineering Highlights
+                </h4>
+
+                <div className="grid md:grid-cols-2 gap-3">
+                  {engineering.map((item, index) => (
+                    <div
+                      key={index}
+                      className="bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-2xl px-4 py-4 text-sm text-gray-700 dark:text-gray-300"
+                    >
+                      {item}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+        )}
 
         <div className="flex flex-wrap gap-3 mt-8">
           <a

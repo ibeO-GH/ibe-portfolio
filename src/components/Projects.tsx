@@ -9,7 +9,19 @@ const projects = [
   {
     title: "TaskForge — Full-Stack Task Management Platform",
     description:
-      "A scalable full-stack productivity platform featuring persistent task management, REST API integration, reusable frontend architecture, and multi-framework implementations across React, Next.js, and Vue.",
+      "A production-focused full-stack task management platform built with scalable frontend architecture, persistent task workflows, REST API integration, and multi-framework implementations across React, Next.js, and Vue.",
+    challenge:
+      "Designed a scalable task management system capable of handling persistent state, dynamic filtering, drag-and-drop interactions, and async API workflows while maintaining responsive performance.",
+    architecture:
+      "Implemented reusable component-driven architecture with separated UI, state, and API layers to improve maintainability and scalability across multiple frontend frameworks.",
+    performance:
+      "Optimized rendering performance using React Query caching, lazy loading, memoization strategies, and efficient state updates for smoother user interactions.",
+    engineering: [
+      "Built reusable UI systems for scalable feature expansion",
+      "Integrated REST APIs with structured async handling",
+      "Implemented persistent task storage and synchronization",
+      "Designed responsive layouts for cross-device consistency",
+    ],
     image: project1,
     demo: "https://taskforge-eta.vercel.app/",
     github: "https://github.com/ibeO-GH/taskforge",
