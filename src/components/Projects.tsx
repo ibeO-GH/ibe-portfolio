@@ -10,24 +10,32 @@ const projects = [
     title: "TaskForge — Full-Stack Task Management Platform",
     description:
       "A production-focused full-stack task management platform built with scalable frontend architecture, persistent task workflows, REST API integration, and multi-framework implementations across React, Next.js, and Vue.",
+
     challenge:
-      "Designed a scalable task management system capable of handling persistent state, dynamic filtering, drag-and-drop interactions, and async API workflows while maintaining responsive performance.",
+      "Designed a scalable task management system capable of handling persistent state, drag-and-drop interactions, dynamic filtering, and async API workflows while maintaining responsive performance and clean UI consistency across devices.",
+
     architecture:
-      "Implemented reusable component-driven architecture with separated UI, state, and API layers to improve maintainability and scalability across multiple frontend frameworks.",
+      "Implemented reusable component-driven architecture with separated UI, state management, and API layers to improve maintainability, scalability, and future feature expansion across multiple frontend frameworks.",
+
     performance:
-      "Optimized rendering performance using React Query caching, lazy loading, memoization strategies, and efficient state updates for smoother user interactions.",
+      "Optimized rendering performance using React Query caching, lazy loading, memoization strategies, efficient state updates, and reduced unnecessary component re-renders for smoother user interactions.",
+
     engineering: [
       "Built reusable UI systems for scalable feature expansion",
       "Integrated REST APIs with structured async handling",
       "Implemented persistent task storage and synchronization",
       "Designed responsive layouts for cross-device consistency",
+      "Improved maintainability using modular component architecture",
+      "Applied scalable frontend engineering practices across React, Next.js, and Vue implementations",
     ],
+
     image: project1,
     demo: "https://taskforge-eta.vercel.app/",
     github: "https://github.com/ibeO-GH/taskforge",
     frontend: "https://github.com/ibeO-GH/taskforge-react",
     backend: "https://github.com/ibeO-GH/taskforge-backend",
     api: "https://taskforge-api-z21d.onrender.com",
+
     tech: [
       "React",
       "TypeScript",
@@ -37,6 +45,7 @@ const projects = [
       "React Query",
       "Tailwind CSS",
     ],
+
     featured: true,
   },
   {
