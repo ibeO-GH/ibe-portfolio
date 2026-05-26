@@ -49,7 +49,7 @@ const projects = [
     featured: true,
   },
   {
-    title: "Velora — Modern E-Commerce Frontend",
+    title: "Velora — E-Commerce Web Application",
     description:
       "A performance-focused e-commerce frontend with dynamic product filtering, persistent cart state, responsive UI architecture, and reusable component systems built for scalable user experiences.",
     image: project2,
